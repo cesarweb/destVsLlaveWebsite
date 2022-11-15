@@ -169,14 +169,14 @@
 
         var respuesta;
 
-        respuesta = "Fondo " + resultado.toFixed(2);
+        respuesta = "Fondo " + parseFloat(resultado).toFixed(2);
 
         if (resultado <= .2) {
-          respuesta = "Destornillador " +resultado.toFixed(2);
+          respuesta = "Destornillador " + parseFloat(resultado).toFixed(2);
         }
 
         if (resultado >= .8) {
-          respuesta = "Llave " + resultado.toFixed(2);
+          respuesta = "Llave " + parseFloat(resultado).toFixed(2);
         }
         document.getElementById("resultado").innerHTML = respuesta;
 
